@@ -1,16 +1,18 @@
 {
+  "homepage": "https://congnh226.github.io/quick-math-game/",
   "name": "quick-math",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -32,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
