@@ -1,13 +1,148 @@
-body {
+html, body {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Courier New";
+  background-color: #181A20;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-over-container {
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5vmin;
+}
+
+.center-block {
+  width: 50vmin;
+  height: 25vmin;
+  background-color: bisque;
+  border: 2px solid #76c7c0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+}
+
+.restart-block {
+  width: 10vmin;
+  height: 10vmin;
+  background-color: #f0f0f0;
+  border: 2px solid #76c7c0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin: 2vmin;
+  cursor: pointer;
+}
+
+.answer-container {
+  justify-content: space-evenly;
+}
+
+.answer-button {
+  font-size: 25vmin;
+  width: 30vmin;
+  height: 30vmin;
+  cursor: pointer;
+}
+
+.true-button {
+  background-color: #e8e8e8;
+  color: #0ECB81;
+}
+
+.false-button {
+  background-color: #e8e8e8;
+  color: #F6465D;
+}
+
+.score-container {
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.quiz-container {
+  text-align: center;
+  font-size: 12vmin;
+  font-weight: bolder;
+  color: #EAECEF;
+}
+
+.icon-text {
+  padding: 5px;
+  margin: 2px;
+  border: 1px solid #e8e8e8;
+  border-radius: .2857rem;
+  background-color: #e8e8e8;
+  color: rgba(0, 0, 0, .6);
+}
+
+.larger-text {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.large-text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.app-container {
+  flex: 1;
+  justify-content: space-between;
+}
+
+.progress-bar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar-container .text-align-left {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.progress-bar-container .text-align-center {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.progress-bar-container .progress-bar-background {
+  width: 100%;
+  height: 10px;
+  background-color: #555;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-container .progress-bar {
+  height: 100%;
+  background-color: #977bba;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease;
 }
