@@ -65,6 +65,7 @@ html, body {
   width: 30vmin;
   height: 30vmin;
   cursor: pointer;
+  text-align: center;
 }
 
 .true-button {
